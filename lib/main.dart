@@ -1,9 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
-import 'package:firebasedemo/app/pages/register_page.dart';
+import 'package:firebasedemo/app/pages/phone_auth.dart';
 import 'package:firebasedemo/app/service/firebase_options.dart';
 import 'package:flutter/material.dart';
 
-import 'app/constant/export.dart';
 
 Future<void> main() async {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: RegisterPage(),
+      home: PhoneAuth(),
     );
   }
 }

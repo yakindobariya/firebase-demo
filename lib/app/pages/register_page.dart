@@ -1,4 +1,3 @@
-import 'package:firebasedemo/app/pages/verification_page.dart';
 import 'package:flutter/material.dart';
 import '../constant/export.dart';
 
@@ -30,7 +29,11 @@ class _RegisterPageState extends State<RegisterPage> {
               Colors.black.withOpacity(0.4), // Adjust the opacity value
               BlendMode.dstATop,
             ),
-            child: Image.asset("images/background.jpg",height: MediaQuery.of(context).size.height,fit: BoxFit.fitHeight,),
+            child: Image.asset(
+              "images/background.jpg",
+              height: MediaQuery.of(context).size.height,
+              fit: BoxFit.fitHeight,
+            ),
           ),
 
           Center(
@@ -95,8 +98,9 @@ class _RegisterPageState extends State<RegisterPage> {
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                        builder: (context) => const VerificationPage() // Navigate to the new splash page
-                                      ),
+                                          builder: (context) =>
+                                              const VerificationPage() // Navigate to the new splash page
+                                          ),
                                     );
                                   } else {
                                     ScaffoldMessenger.of(context).showSnackBar(
